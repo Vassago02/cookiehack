@@ -75,4 +75,12 @@ Game.ObjectsById.reduce((a, e) => {
     }
 }, Game.ObjectsById[0]).levelUp()
 }, 6*60*60*1000)
-
+        
+if (Game.ObjectsById[5].minigame) {
+    Game.ObjectsById[5].minigame.goods.forEach((x, 1) => {
+        if (x.val < 5) {
+            Game.ObjectsById[5].minigame.buyGood(i, 100)
+        }
+    })
+}
+        
