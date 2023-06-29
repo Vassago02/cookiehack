@@ -62,3 +62,17 @@ setInterval(() => {
         Game.ClickCookie()
     }
 },50)
+
+setInterval(() => {
+Game.ObjectsById.reduce((a, e) => {
+    if ((e.cps(e)*e.amount)/(e.level + 1) > (a.cps(a)*a.amount)/(a.level+1)) {
+setInterval(() => {
+Game.ObjectsById.reduce((a, e) => {
+    if ((e.cps(e)*e.amount)/(e.level + 1) > (a.cps(a)*a.amount)/(a.level+1) && !a.level == 0) {
+        return e;
+    } else {
+        return a;
+    }
+}, Game.ObjectsById[0]).levelUp()
+}, 6*60*60*1000)
+
