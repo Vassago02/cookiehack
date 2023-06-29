@@ -77,7 +77,7 @@ Game.ObjectsById.reduce((a, e) => {
 }, 6*60*60*1000)
         
 if (Game.ObjectsById[5].minigame) {
-    Game.ObjectsById[5].minigame.goods.forEach((x, 1) => {
+    Game.ObjectsById[5].minigame.goods.forEach((x, i) => {
         if (x.val < 5) {
             Game.ObjectsById[5].minigame.buyGood(i, 100)
         }
