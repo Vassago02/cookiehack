@@ -83,4 +83,3 @@ if (Game.ObjectsById[5].minigame) {
         }
     })
 }
-        
